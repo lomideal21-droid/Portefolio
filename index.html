@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamadou Kende - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6366f1'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-primary">Mamadou Kende</h1>
+      <ul class="hidden md:flex gap-6">
+        <li><a href="#about" class="hover:text-primary">À propos</a></li>
+        <li><a href="#formation" class="hover:text-primary">Formation</a></li>
+        <li><a href="#experience" class="hover:text-primary">Expérience</a></li>
+        <li><a href="#skills" class="hover:text-primary">Compétences</a></li>
+        <li><a href="#projects" class="hover:text-primary">Projets</a></li>
+        <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden">☰</button>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4">
+      <ul class="flex flex-col gap-3">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-r from-primary to-indigo-400 text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Salut, je suis Mamadou Kende</h2>
+      <p class="text-lg md:text-xl mb-6">Étudiant 2 année en Génie informatique</p>
+      <a href="#contact" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Me contacter</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold mb-6 text-center">À propos</h3>
+    <p class="text-center max-w-3xl mx-auto">Étudiant 2 année en Génie informatique passionné par développement web. J'aime créer des sites modernes et responsives avec HTML, CSS et JavaScript.</p>
+  </section>
+
+  <section id="formation" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-8 text-center">Formation</h3>
+      <div class="space-y-6">
+        <div class="border-l-4 border-primary pl-4">
+          <h4 class="font-bold">Formation en Réseau</h4>
+          <p class="text-gray-600">CEFAS - 2024/2025</p>
+        </div>
+        <div class="border-l-4 border-primary pl-4">
+          <h4 class="font-bold">Formation en Génie informatique</h4>
+          <p class="text-gray-600">UNIPRO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="py-16 max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold mb-8 text-center">Expériences</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="font-bold">Stage Dev</h4>
+        <p class="text-gray-600">SMART GROUP - Mai 2025</p>
+        <p>Développement web et maintenance d'applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-8 text-center">Compétences</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="bg-gray-100 p-4 rounded-lg">HTML</div>
+        <div class="bg-gray-100 p-4 rounded-lg">CSS</div>
+        <div class="bg-gray-100 p-4 rounded-lg">JAVA</div>
+        <div class="bg-gray-100 p-4 rounded-lg">JAVASCRIPT</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16 max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold mb-8 text-center">Projets</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-lg shadow overflow-hidden">
+        <img src="https://via.placeholder.com/600x300" alt="To-Do List" class="w-full">
+        <div class="p-4">
+          <h4 class="font-bold">To-Do List</h4>
+          <p class="text-gray-600">Application de gestion de tâches en JavaScript avec sauvegarde localStorage</p>
+          <a href="#" class="text-primary">Voir le projet →</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow overflow-hidden">
+        <img src="https://via.placeholder.com/600x300" alt="Site Vitrine Pizzeria" class="w-full">
+        <div class="p-4">
+          <h4 class="font-bold">Site Vitrine Pizzeria</h4>
+          <p class="text-gray-600">Site responsive d'une pizzeria en HTML, CSS et Tailwind</p>
+          <a href="#" class="text-primary">Voir le projet →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Contact</h3>
+      <p class="mb-4">Une idée de projet ? Contacte-moi !</p>
+      <p>Email : <a href="mailto:lomideal21@gmail.com" class="text-primary">mamadou.kende@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>© 2026 Mamadou Kende. Tous droits réservés.</p>
+    <div class="flex justify-center gap-4 mt-2">
+      <a href="#" class="hover:text-primary">LinkedIn</a>
+      <a href="https://github.com/mamadou-kende" target="_blank" class="hover:text-primary">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
